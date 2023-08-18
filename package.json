@@ -17,5 +17,10 @@
   },
   "devDependencies": {
     "prettier": "^3.0.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSameLine": false
   }
 }
