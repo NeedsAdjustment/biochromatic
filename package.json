@@ -1,7 +1,12 @@
 {
   "name": "biochromatic",
-  "type": "module",
   "version": "0.0.1",
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/rss": "^2.4.4",
+    "@astrojs/sitemap": "^2.0.2",
+    "astro": "^2.10.9"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,18 +14,9 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/rss": "^2.4.4",
-    "@astrojs/sitemap": "^2.0.2",
-    "astro": "^2.10.9"
-  },
+  "type": "module",
   "devDependencies": {
-    "prettier": "^3.0.2"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "bracketSameLine": false
+    "prettier": "^3.0.2",
+    "prettier-plugin-astro": "^0.11.1"
   }
 }
