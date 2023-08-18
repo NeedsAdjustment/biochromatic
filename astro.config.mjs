@@ -1,10 +1,9 @@
-import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 
-import sitemap from '@astrojs/sitemap'
+import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: 'https://biochromatic.ink',
+  site: "https://biochromatic.ink",
   integrations: [mdx(), sitemap()],
-})
-
+});
