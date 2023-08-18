@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
-import SearchField from '../components/SearchField.astro'
 ---
 
 <!DOCTYPE html>
@@ -13,10 +12,25 @@ import SearchField from '../components/SearchField.astro'
   </head>
   <body>
     <Header title={SITE_TITLE} />
-    <main>
-      <h1>Search</h1>
-      <SearchField />
-    </main>
+    <div class="flex justify-center">
+      <div class="text-lg w-5/6 lg:w-3/4">
+        <!-- Powered by https://pagefind.app -->
+        <link href="/_pagefind/pagefind-ui.css" rel="stylesheet" />
+        <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+
+        <div id="search"></div>
+        <script>
+          window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: '#search' })
+          })
+        </script>
+        <!-- pagefind end -->
+        <noscript>
+          Hi! You need to enable JavaScript to search the site. Sorry for the
+          inconvenience.
+        </noscript>
+      </div>
+    </div>
     <Footer />
   </body>
 </html>

@@ -6,13 +6,13 @@
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.2",
     "astro": "^2.10.9",
-    "astro-pagefind": "^1.2.3",
     "pagefind": "^0.12.0"
   },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "postbuild": "pagefind --source dist",
     "preview": "astro preview",
     "astro": "astro"
   },
