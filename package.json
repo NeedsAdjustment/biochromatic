@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "astro build && npm run postbuild && astro preview",
     "start": "npm run dev",
-    "build": "astro build",
+    "build": "astro build && npm run postbuild",
     "postbuild": "pagefind --source dist/",
     "preview": "astro preview",
     "astro": "astro"
