@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap'
 export default defineConfig({
   site: 'https://biochromatic.ink',
   build: {
-    format: "file",
+    format: 'file',
   },
   integrations: [mdx(), sitemap()],
 })
