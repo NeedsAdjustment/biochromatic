@@ -97,7 +97,7 @@ const shortPosts = (await getCollection('short')).sort(
           {
             longPosts.map((post) => (
               <li>
-                <a href={`/long/${post.slug}/`}>
+                <a href={`/long/${post.slug}`}>
                   <img
                     width={720}
                     height={360}
@@ -119,7 +119,7 @@ const shortPosts = (await getCollection('short')).sort(
           {
             shortPosts.map((post) => (
               <li>
-                <a href={`/short/${post.slug}/`}>
+                <a href={`/short/${post.slug}`}>
                   <img
                     width={720}
                     height={360}
